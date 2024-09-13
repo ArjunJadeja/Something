@@ -1,17 +1,18 @@
-# Something to avoid in Kotlin
+# <img src="assets/KotlinLogo.svg" alt="Kotlin Logo" height = 22 /> Something to avoid
 
 <p align="center">
   <img src="assets/SomethingThumbnail.png" width="800"/> 
 </p>
 
-![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ArjunJadeja/Something)
 ![GitHub issues](https://img.shields.io/github/issues/ArjunJadeja/Something)
 ![GitHub stars](https://img.shields.io/github/stars/ArjunJadeja/Something)
 ![GitHub forks](https://img.shields.io/github/forks/ArjunJadeja/Something)
 
-This project showcases some of the common mistakes in Kotlin programming and demonstrates best practices to avoid them.
+## 💡 About Project
+
+This project showcases some of the common mistakes in Kotlin programming and showcase alternate approaches to avoid them.
 
 ## 🚀 Quick Start
 
@@ -20,73 +21,77 @@ This project showcases some of the common mistakes in Kotlin programming and dem
    git clone https://github.com/ArjunJadeja/Something.git
    ```
 2. Open the project in your favorite IDE.
-3. Run the `main` function in [`Main.kt`](src/main/kotlin/Main.kt) to see the safe practices in action.
-4. Explore the [`Avoid.kt`](src/main/kotlin/Avoid.kt) file to see common mistakes and the [`Instead.kt`](src/main/kotlin/Instead.kt) file for correct implementations.
+3. Explore the `mistakes` folder to see common mistakes and their solutions.
+
+## 🎓 Mistakes
+
+Here's a list of the mistakes added:
+
+1. [Uninitialized Properties](src/main/kotlin/mistakes/UninitializedProperties.kt)
+2. [Null Safety](src/main/kotlin/mistakes/NullSafety.kt)
+3. [Unsafe Casting](src/main/kotlin/mistakes/UnsafeCasting.kt)
+4. [Nullable Collections](src/main/kotlin/mistakes/NullableCollection.kt)
+5. [Custom Getters](src/main/kotlin/mistakes/CustomGetter.kt)
+6. [Lambda Variable Shadowing](src/main/kotlin/mistakes/LambdaVariableShadowing.kt)
 
 ## 📁 Project Structure
 
-- [`Main.kt`](src/main/kotlin/Main.kt): Entry point of the application
-- [`Something.kt`](src/main/kotlin/Something.kt): Base class definition
-- [`Avoid.kt`](src/main/kotlin/Avoid.kt): Examples of common Kotlin mistakes
-- [`Instead.kt`](src/main/kotlin/Instead.kt): Correct implementations and best practices
+The project is organized into numbered files in the `mistakes` folder, each containing a specific mistake and its
+solution.
 
-## 🔍 Code Samples
-
-Here's a summary of what you'll find in the code samples:
-
-### Base Class ([Something.kt](src/main/kotlin/Something.kt))
-```kotlin
-open class Something : Any()
+```
+Something/
+├── src/
+│   └── main/
+│       └── kotlin/
+│           ├── Main.kt
+│           ├── Something.kt
+│           └── mistakes/
+│               ├── CustomGetter.kt
+│               ├── LambdaVariableShadowing.kt
+│               ├── NullSafety.kt
+│               ├── NullableCollection.kt
+│               ├── UninitializedProperties.kt
+│               └── UnsafeCasting.kt
+├── .gitignore
+├── LICENSE
+├── README.md
+└── build.gradle.kts
 ```
 
-### Common Mistakes ([Avoid.kt](src/main/kotlin/Avoid.kt))
-This file contains examples of:
-1. Uninitialized `lateinit` properties
-2. Force unwrapping null values
-3. Unsafe casting
-4. Accessing nullable collections without checks
-5. Unsafe iteration over nullable lists
-6. Accessing properties in custom getters before initialization
-7. Shadowing variables in lambdas
+## 🎯 Future Goals
 
-[View full Avoid.kt](src/main/kotlin/Avoid.kt)
+The goal is to continuously learn and grow from real-world mistakes.
 
-### Best Practices ([Instead.kt](src/main/kotlin/Instead.kt))
-This file demonstrates the correct way to handle:
-1. Safe initialization of properties
-2. Null safety with safe call operator and Elvis operator
-3. Safe casting
-4. Safe access to nullable collections
-5. Safe iteration over nullable lists
-6. Proper initialization in custom getters
-7. Avoiding variable shadowing in lambdas
+## 🗺️ Roadmap
 
-[View full Instead.kt](src/main/kotlin/Instead.kt)
+There's no fixed roadmap for this project. The approach is to:
 
-## 🎓 What You'll Learn
-
-1. Handling uninitialized properties
-2. Safe null handling
-3. Type-safe casting
-4. Working with nullable collections
-5. Proper use of custom getters
-6. Avoiding variable shadowing in lambdas
-7. Safe iteration over nullable lists
+1. Continuously add new learnings and mistakes as we encounter them.
+2. Welcome contributions from the community.
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have additional examples of common Kotlin mistakes or best practices, please follow these steps:
+Contributions from Kotlin developers of all experience levels are welcomed! Whether you're a beginner who just made their
+first mistake or an experienced developer with valuable insights, your contribution can help others learn.
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Add your examples to the appropriate files
-4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin feature/your-feature-name`)
-6. Create a new Pull Request
+- For beginners: Don't be shy! Your recent learnings are especially valuable for other newcomers.
+- For experienced developers: Your advanced mistakes and learnings can help others discover new aspects of Kotlin.
+
+Please check our [Contribution Guidelines](GUIDELINES.md) for more details on how to contribute.
 
 ## ⭐ Show Your Support
 
-If you like this project, please give it a star on GitHub. It helps others discover this resource!
+If you find this project interesting or helpful, please give it a star on GitHub. It helps others discover this resource and
+contributes to building our learning community!
+
+## 🔗 Connect
+
+Feel free to connect with me on LinkedIn to discuss any ideas or collaborate:
+
+[Arjun Jadeja - LinkedIn](https://www.linkedin.com/in/arjun-jadeja/)
+
+I'm always open to discussing new ideas, collaborating on projects, or just chatting about Kotlin and software development. Don't hesitate to reach out!
 
 ## 📚 Additional Resources
 
@@ -94,9 +99,10 @@ If you like this project, please give it a star on GitHub. It helps others disco
 - [Kotlin Official Documentation](https://kotlinlang.org/docs/home.html)
 - [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html)
 
-Happy coding, and remember: learn from mistakes to write better Kotlin code! 🚀
+Happy coding, and remember: every mistake is a learning opportunity! 🚀
 
 ## 📄 License
+
 ```
 Copyright (C) 2024 Arjun Jadeja (arjunjadeja.com)
 
