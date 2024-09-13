@@ -1,6 +1,5 @@
 package com.arjunjadeja
 
-
 /**
  * Main function demonstrating mistakes.
  *
