@@ -1,4 +1,4 @@
-# <img src="assets/KotlinLogo.svg" alt="Kotlin Logo" height = 22 /> Something to avoid
+# <img src="assets/KotlinLogo.svg" alt="Kotlin Logo" height = 24 /> Something to avoid
 
 <p align="center">
   <img src="assets/SomethingThumbnail.png" width="800"/> 

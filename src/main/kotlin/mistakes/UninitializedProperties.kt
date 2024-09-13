@@ -14,7 +14,7 @@ class UninitializedProperties {
     else println("initializedSomething is not initialized")
 }
 
-// Do this instead
+// ✅ Do this instead
 class InitializedProperty {
     private var something: Something? = null
     fun printSomething() = print(something?.toString() ?: "String is null")
