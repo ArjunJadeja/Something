@@ -10,7 +10,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ArjunJadeja/Something)
 ![GitHub issues](https://img.shields.io/github/issues/ArjunJadeja/Something)
 ![GitHub stars](https://img.shields.io/github/stars/ArjunJadeja/Something)
-![GitHub forks](https://img.shields.io/github/forks/ArjunJadeja/Something)
 
 ## 💡 About Project
 
@@ -40,7 +39,7 @@ Here's a list of the mistakes added:
 
 Here's what we've learned so far:
 
-1. [Using `then` with Modifier in Jetpack Compose](src/main/kotlin/learnings/ThenInComposeModifier.kt)
+1. [Using then with Modifier in Jetpack Compose](src/main/kotlin/learnings/ThenWithComposeModifier.kt)
 
 ## 📁 Project Structure
 
@@ -61,7 +60,7 @@ Something/
 │           │   ├── UninitializedProperties.kt
 │           │   └── UnsafeCasting.kt
 │           └── learnings/
-│               └── ModifierExtensions.kt
+│               └── ThenWithComposeModifier.kt
 ├── .gitignore
 ├── LICENSE
 ├── README.md
