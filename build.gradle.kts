@@ -7,9 +7,11 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    google()
 }
 
 dependencies {
+    implementation("androidx.compose.foundation:foundation:1.7.2")
     testImplementation(kotlin("test"))
 }
 
