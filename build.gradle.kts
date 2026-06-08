@@ -1,5 +1,7 @@
 plugins {
-    kotlin("jvm") version "2.0.20"
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.compose.multiplatform)
+    alias(libs.plugins.kotlin.compose.compiler)
 }
 
 group = "com.arjunjadeja"
@@ -11,13 +13,17 @@ repositories {
 }
 
 dependencies {
-    implementation("androidx.compose.foundation:foundation:1.7.2")
-    testImplementation(kotlin("test"))
+    implementation(compose.foundation)
+    implementation(compose.ui)
+    implementation(compose.runtime)
+
+    testImplementation(libs.kotlin.test)
 }
 
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
