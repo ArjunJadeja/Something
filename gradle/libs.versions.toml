@@ -1,0 +1,16 @@
+# Version Catalog — single source of truth for all dependency versions.
+[versions]
+kotlin = "2.4.0"
+compose = "1.11.1"
+
+[libraries]
+# Used in build.gradle.kts via libs.kotlin.test
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+# Kotlin JVM — compiles Kotlin to JVM bytecode
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+# Required compiler plugin for Jetpack Compose — must match kotlin version
+kotlin-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+# Compose Multiplatform — enables Compose UI on Desktop/JVM
+compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "compose" }
